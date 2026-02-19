@@ -13,11 +13,11 @@ const Menu = () => {
  const handleLogout = async () => {
   try {
     await axios.post(
-      "https://zerodha-colne-zsx2.onrender.com/logout",
+      "https://zerodha-colne-zsx2.onrender.com/api/logout",
       {},
       { withCredentials: true }
     );
-    window.location.replace("zerodha-colne-dshboard-w8n4.vercel.app");
+    window.location.replace("https://zerodha-colne-dshboard-w8n4.vercel.app");
   } catch (err) {
     console.log(err); 
   }
